@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">ACD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<section class="jumbotron jumbotron-fluid text-center" style="background-image: url('https://picsum.photos/200/300'); background-size: cover; color: white;">
+    <div class="container">
+        <h1 class="display-4">Welcome to Our Business</h1>
+        <p class="lead">We provide the best services for your needs.</p>
+        <a href="#contact" class="btn btn-primary btn-lg">Contact Us</a>
+    </div>
+</section>
+<section id="about" class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>About Us</h2>
+            <p>We are a leading company in our industry, dedicated to providing top-notch services to our clients.</p>
+            <a href="#services" class="btn btn-secondary">Learn More</a>
+        </div>
+        <div class="col-md-6">
+            <img src="https://picsum.photos/200/300" alt="About Us" class="img-fluid rounded">
+        </div>
+    </div>
+</section>
+<section id="services" class="container my-5">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://picsum.photos/200/300" class="card-img-top" alt="Service 1">
+                <div class="card-body">
+                    <h5 class="card-title">Service 1</h5>
+                    <p class="card-text">Description of Service 1. We offer exceptional quality and service.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://picsum.photos/200/300" class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">Service 2</h5>
+                    <p class="card-text">Description of Service 2. Our team is here to help you succeed.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://picsum.photos/200/300" class="card-img-top" alt="Service 3">
+                <div class="card-body">
+                    <h5 class="card-title">Service 3</h5>
+                    <p class="card-text">Description of Service 3. We are committed to excellence.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section  class="container my-5">
+    <h2 class="text-center mb-4">Testimonials</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-block w-100 text-center">
+                    <p>"Great service! Highly recommend."</p>
+                    <small>- Customer 1</small>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 text-center">
+                    <p>"Professional and reliable. Will use again."</p>
+                    <small>- Customer 2</small>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 text-center">
+                    <p>"Exceeded my expectations in every way."</p>
+                    <small>- Customer 3</small>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+<section id="contact" class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="mt-4">
+        <h5>Our Location</h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14781.244808336585!2d-100.98591027665408!3d22.152223051918096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa201fc90fffb%3A0x318299fedfad4ff6!2sCentro%20Historico%2C%2078000%20San%20Luis%20Potosi!5e0!3m2!1sen!2smx!4v1748620318001!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+<footer class="bg-light text-center text-lg-start mt-5">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">ACD</h5>
+                <p>© 2025 ACD. All rights reserved.</p>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Follow Us</h5>
+                <a href="#" class="me-4 text-reset">Facebook</a>
+                <a href="#" class="me-4 text-reset">Twitter</a>
+                <a href="#" class="me-4 text-reset">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1);">
+        © 2025 ACD
+    </div>
+</footer>
+</body>
+</html>
